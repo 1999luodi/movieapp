@@ -1,0 +1,54 @@
+ <!-- 搜索 -->
+ <view class="page__bd">
+		<view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+			<form class="weui-search-bar__form"
+      aria-role="combobox"
+      aria-haspopup="true"
+      aria-expanded="{{inputVal.length > 0 ? 'true' : 'false'}}"
+      aria-owns="searchResult"
+      >
+        <view class="weui-search-bar__box">
+          <i class="weui-icon-search"></i>
+          <input aria-controls="searchResult" type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" bindconfirm="search"
+
+          />
+          <view aria-role="button" aria-label="清除" class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput"></view>
+        </view>
+        <label class="weui-search-bar__label" bindtap="showInput">
+          <i class="weui-icon-search"></i>
+          <span class="weui-search-bar__text">搜索</span>
+        </label>
+			</form>
+      <view aria-role="button" class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+		</view>
+		<view aria-role="listbox" id="searchResult" class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+			<view role="option" class="weui-cell weui-cell_active weui-cell_access" wx:for="{{list}}" wx:key="this">
+				<view class="weui-cell__bd weui-cell_primary">
+					<view>{{item}}</view>
+				</view>
+			</view>
+			
+			
+		</view>
+	</view>
+<swiper class="swiper l_boxradiu">
+<swiper-item class="container swiperitem" wx:for="{{movies}}" wx:for-index="idx" wx:key="this">
+    <view class="content">
+            <view class="image l_boxradiu">
+                <image src="{{item.movie_img}}" alt="" mode=""></image>
+            </view>
+            <view class="introduce l_boxradiu ">
+            
+                <view class="title">标题：<text>{{item.title}}</text></view>
+                <view class="grade">评分：<text>{{item.grade}}</text></view>
+                <view class="dir">导演：<text>{{item.director}}</text></view>
+                <view class="actor">参演：<text>{{item.actors}}</text></view>
+                <view class="release">上映：<text>{{item.release_date}}</text></view>
+            
+                <view class="detail l_boxradiu ">简介：<text>{{item.content}}</text></view>
+            </view>
+        </view></swiper-item>
+</swiper>
+<view >
+        
+    </view>

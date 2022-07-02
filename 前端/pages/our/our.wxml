@@ -1,0 +1,3 @@
+<icon class="iconfont icon-renyuanguanli">DSAF</icon>
+<icon class="iconfont icon-qiandao">DSAF</icon>
+<view id="tapTest" data-hi="Weixin" bindtap="tapName"> Click me! </view>

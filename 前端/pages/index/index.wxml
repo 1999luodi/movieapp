@@ -1,0 +1,54 @@
+<!--index.wxml-->
+
+<view class="container">
+
+<!-- 轮播 -->
+  <view class="banner boxradiu">
+    <swiper class="swiper" indicator-dots="{{indicatorDots}} " circular="ture" autoplay="{{autoplay}}"
+      interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{backimgs}}" wx:key="*this">
+        <swiper-item class='swiper-item'>
+          <image class="img" src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+<!-- 导航 -->
+<view class="navigator-title">
+  <navigator class="ntitle"  url="./navigate" hover-class="navigator-hover" open-type="redirect" hover-class="other-navigator-hover">
+    <image class="ntitle-img lanimation" src="/static/images/签到.png"></image>
+    <view class="ntitletext">签到</view>
+  </navigator>
+  <navigator class="ntitle"  url="./navigate" hover-class="navigator-hover" open-type="redirect" hover-class="other-navigator-hover">
+    <image class="ntitle-img" src="/static/images/排行榜.png"></image>
+    <view class="ntitletext">排行榜</view>
+  </navigator>
+  <navigator class="ntitle"  url="./navigate" hover-class="navigator-hover" open-type="redirect" hover-class="other-navigator-hover">
+    <image class="ntitle-img"  src="/static/images/尊贵身份.png"></image>
+    <view class="ntitletext">尊贵</view>
+  </navigator>
+  <navigator class="ntitle"  url="./navigate" hover-class="navigator-hover" open-type="redirect" hover-class="other-navigator-hover">
+    <image class="ntitle-img"  src="/static/images/热门话题.png"></image>
+    <view class="ntitletext">热门</view>
+  </navigator>
+
+ 
+</view>
+  <!-- 商品页 -->
+  <view class="books l_boxradiu">
+
+    <view class="book" wx:for="{{moviedata}}" wx:for-index="idx" wx:key="this">
+      <view id="book{{idx}}" class="backimg" bindtouchstart="getdetailtop" data-index="{{idx}}">
+        <image src="{{item.movie_img}}" alt="" mode=""></image>
+
+        <view class="detail {{bookindex==idx ? 'detailtap':''}}" >
+          <view class="grade">评分:<text>{{item.grade}}9</text></view>
+          <view class="dir">导演:<text>{{item.director}}</text></view>
+          <view class="dir">参演:<text>{{item.actors}}</text></view>
+         
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view style="text-align: center; color: #807F84;" >-----------已经到底了亲----------- </view>
