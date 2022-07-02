@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影详情</title>
+    <style type="text/css">
+        img{
+            width: 150px;
+            border-radius: 10px;
+        }
+        .movies{
+
+        }
+        .item{
+            list-style: none;
+            border-radius: 20px;
+            border: 5px groove lightgrey;
+            width: 40%;
+            margin: 20px;
+            padding-left: 2em;
+            float: left;
+            min-height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="movies">
+    {% for i in  movies  %}
+        <li class="item">
+            <p>电影名称：{{ i.title }}</p>
+            <p><img src="{{ i.movie_img }}"></p>
+            <p>导演：{{ i.director }}</p>
+            <p>参演：{{ i.actors }}</p>
+            <p>评分：{{ i.grade }}</p>
+            <p>电影简介：{{ i.content }}</p>
+            <p>上映时间：{{ i.release_date|date:"Y-m-d" }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/movie/save/" method="post">
+     {% csrf_token %}
+    <table>
+			<tr>
+				<td>title</td>
+				<td>
+					<input name="title" type="text"/>
+				</td>
+			</tr>
+			<tr>
+				<td>movie_img</td>
+				<td>
+					<input name="movie_img" type="text"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>director</td>
+				<td>
+					<input name="director" type="text"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>actor</td>
+				<td>
+					<input name="actors" type="text"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>content</td>
+				<td>
+                    <textarea cols="15" rows="3" name="content" type="text"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td>grade</td>
+				<td>
+					<input name="grade" type="number" min="1.0" max="10" step="0.1"/>
+				</td>
+			</tr>
+			<tr>
+				<td>relese_date</td>
+				<td>
+					<input name="relese_date" type="date"/>
+				</td>
+			</tr>
+             <tr>
+                 <td><button type="submit"> 提交</button></td>
+				<td><button type="reset"> 重置</button></td>
+			</tr>
+        </table>
+
+
+</form>
+
+</body>
+</html>
