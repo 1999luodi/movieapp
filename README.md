@@ -5,10 +5,10 @@ python+微信小程序
 
 ### 1.前端项目展示
 
-![img](file:///C:/Users/luodi/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![img](D:\GitRepertory\movieapp\movieapp\img\clip_image001.jpg)
 
-![img](file:///C:/Users/luodi/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![img](D:\GitRepertory\movieapp\movieapp\img\clip_image002.jpg)
 
 2.后端管理（admin/23456）
 
-![image-20220727230210064](C:\Users\luodi\AppData\Roaming\Typora\typora-user-images\image-20220727230210064.png)
+![image-20220727230210064](D:\GitRepertory\movieapp\movieapp\img\image-20220727230210064.png)
