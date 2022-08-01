@@ -7,7 +7,7 @@ python+微信小程序
 
 ![img](./images/1.jpg)
 
-![img](./images/2.jpg)
+![img](./images/2.GPJ)
 
 2.后端管理（admin/23456）
-![image](https://user-images.githubusercontent.com/75122356/182166669-362e0be2-3ff8-4619-9219-5d9b0c3509b4.png)
+![image](https://user-images.githubusercontent.com/75122356/182167086-592378a4-d95d-4307-8f40-c923947b860b.png)
