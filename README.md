@@ -5,7 +5,7 @@ python+微信小程序
 
 ### 1.前端项目展示
 
-![img](./img/1.jpg)
+![img](./images/1.jpg)
 
 ![img](./img/1.jpg)
 
